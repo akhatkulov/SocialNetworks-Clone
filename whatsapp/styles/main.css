@@ -210,3 +210,114 @@ body{
     align-items: center;
     font-size: 0.75em;
 }
+
+.target_user{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.target_user h4{
+    font-weight: 400;
+    line-height: 1.2em;
+    margin-left: 15px;
+}
+.target_user h4 span{
+    color:#555;
+    font-size: 0.8em;
+}
+
+.chatbox-sec{
+    position: relative;
+    padding: 50px;
+    overflow-y: auto;
+    width: 100%;
+    height: calc(100% - 120px); /* 60 header + 60 type */
+}
+
+.message{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+}
+.message p{
+    position: relative;
+    right: 0;
+    text-align: right;
+    max-width: 65%;
+    padding: 12px;
+    background-color: #dcf8c6;
+    border-radius: 10px;
+}
+.message p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, #dcf8c6 0%, #dcf8c6 50%,transparent 50%,transparent);
+}
+
+.message p span{
+    display: block;
+    margin: 5px;
+    font-size: 0.85em;
+    opacity: 0.5;
+}
+
+.my_message{
+    justify-content: flex-end;
+}
+
+.fr_message{
+    justify-content: flex-start;
+}
+
+.fr_message p{
+    background-color: #fff;
+    text-align: left;
+}
+
+.fr_message p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(225deg, #fff 0%, #fff 50%,transparent 50%,transparent);
+}
+
+.chatbox-input{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbox-input ion-icon{
+    cursor: pointer;
+    font-size: 1.8em;
+    color: #51585c;
+}
+
+.chatbox-input ion-icon:nth-child(1){
+    margin-right: 15px;
+
+}
+
+.chatbox-input input{
+    position: relative;
+    width: 90%;
+    margin: 0 20px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1em;
+}
