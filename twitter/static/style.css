@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Bokor", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: black;
+}
+
+.sidebar{
+    border-right: 1px solid white;
+    flex: 0.2;
+    min-width: 250px;
+    margin-top:20px;
+    padding-left: 20px;
+    padding-right:20px;
+}
+
+.sidebar-options{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar-options .material-symbols-outlined{
+    padding: 20px;
+}
+
+.sidebar-options h2{
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.sidebar-options:hover{
+    background-color: white;
+    color: black;
+}
+
+.owl-pic{
+    font-size: 50px;
+    size: 60px;
+}
